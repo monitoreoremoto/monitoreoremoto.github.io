@@ -1,0 +1,12 @@
+body {
+  background: #b4b4b4;
+}
+#content{
+	margin: 150px auto;
+	width: 350px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
