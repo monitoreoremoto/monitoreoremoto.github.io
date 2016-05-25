@@ -4,7 +4,7 @@
     	<meta charset="UTF-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Principal|Monitoreo remoto, Salitre-Guayas [Ecuador]</title>
+    	<title>Aplicaciones|Monitoreo remoto, Salitre-Guayas [Ecuador]</title>
 		<link rel="shortcut icon" type="image/x-icon" href="resources/icon_web.ico">
     	<link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="styles/style.css" rel="stylesheet" media="screen">
@@ -15,7 +15,6 @@
       		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     	<![endif]-->
     </head>
-  	<body>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -30,9 +29,9 @@
                 </div>
                 <div id="navbar2" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html"><i class="icon-home"></i>Principal</a></li>
+                        <li><a href="index.html"><i class="icon-home"></i>Principal</a></li>
                         <li><a href="dashboard.html"><i class="icon-gauge"></i>Dashboard</a></li>
-                        <li><a href="aplications.html"><i class="icon-chart-line"></i>Aplicaciones</a></li>
+                        <li  class="active"><a href="aplications.html"><i class="icon-chart-line"></i>Aplicaciones</a></li>
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="icon-doc-text"></i>Información<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -48,25 +47,38 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <h3 class="page-header text-center">Resumen del proyecto</h3>
+            <h3 class="page-header text-center">Aplicaciones de la API Emoncms</h3> 
+            <h4 class="page-header">My Solar</h4>
+                <div class="row">
+                    <div class="col-md-9">
+                        <iframe src="https://emoncms.org/app?readkey=c73637617c9b51b66556127522710cd7#mysolarpv" width=100% height=350 frameborder=1 scrolling=auto>
+                        </iframe>    
+                    </div>
+                    <div class="col-md-3">
+                        <p>La aplicación My solar se puede utilizar para explorar la generación solar en el lugar, el consumo tanto en tiempo real y con una vista gráfica de potencia en movimiento e históricamente con una barra gráfica diaria y mensual.        
+                        </p>
+                        <img src="resources/images/panel%20solar.jpg" class="img-responsive" alt="Diagrama de bloques">    
+                    </div>     
+                </div>
+            <h4 class="page-header">My Electric</h4>
             <div class="row">
-                <div class="col-md-7">
-                    <p>La idea principal del proyecto es iluminar el patio del Colegio Franciscano del Cantón Salitre usando reflectores con tecnología Led alimentados mediante un generador fotovoltaico y a su vez desarrollar una sistema a bajo costo que permita el monitoreo permanente del consumo energético.
-Este sistema consiste en capturar a través de circuitos electrónicos y sensores los valores de corriente, voltaje involucrados en el proceso de generación de energía solar fotovoltaica, convirtiendo esta información en datos digitales para ser almacenados y publicados en una plataforma web para su posterior almacenamiento, visualización y análisis.
-El monitoreo a través de internet permite que el proceso de generación de energía solar fotovoltaica pueda ser observado desde cualquier computador o dispositivo móvil que cuente con acceso a internet. Este sistema de monitoreo esta soportado sobre la red GSM/GPRS nacional, por lo que solo es necesario contar con red de telefonía móvil.  Además es posible efectuar consultas sobre los parámetros de las variables mencionadas en tiempo real, sin importar el lugar donde se encuentre, también se dispone una alarma vía SMS sobre el mal funcionamiento del sistema. En la figura adjunto se muestra un diagrama de bloques simplificado del sistema.
-                    </p>    
-                </div> 
-                <div class="col-md-5">
-                    <img src="resources/images/diagrama%20de%20bloques.JPG" class="img-responsive" alt="Diagrama de bloques">    
-                </div>   
-            </div>
-        </div>
+                <div class="col-md-9">
+                    <iframe src="https://emoncms.org/app?readkey=c73637617c9b51b66556127522710cd7#myelectric" width=100% height=350 frameborder=1 scrolling=auto>
+                    </iframe>    
+                </div>
+                <div class="col-md-3">
+                    <p>La aplicación My Electric es una sencilla aplicación de monitoreo de energía del hogar o edificio para poder explorar el consumo de electricidad cada momento. Incluye una visión en tiempo real y un kWh históricos por gráfico de barras día.    
+                    </p>
+                    <img src="resources/images/consumo%20el%C3%A9ctrico.jpg" class="img-responsive" alt="Diagrama de bloques">    
+                </div>     
+            </div>  
+        </div>     
 		<footer class="footer">
             <div class="container-fluid">
                 <p class="text-muted"><i class="icon-copyright"></i>Todos los derechos reservados a Rangel & Enriquez.</p>
             </div>
         </footer>
   	</body>
-  	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
 </html>

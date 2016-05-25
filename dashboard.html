@@ -4,7 +4,7 @@
     	<meta charset="UTF-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Principal|Monitoreo remoto, Salitre-Guayas [Ecuador]</title>
+    	<title>Dashboard|Monitoreo remoto, Salitre-Guayas [Ecuador]</title>
 		<link rel="shortcut icon" type="image/x-icon" href="resources/icon_web.ico">
     	<link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="styles/style.css" rel="stylesheet" media="screen">
@@ -30,8 +30,8 @@
                 </div>
                 <div id="navbar2" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html"><i class="icon-home"></i>Principal</a></li>
-                        <li><a href="dashboard.html"><i class="icon-gauge"></i>Dashboard</a></li>
+                        <li><a href="index.html"><i class="icon-home"></i>Principal</a></li>
+                        <li   class="active"><a href="dashboard.html"><i class="icon-gauge"></i>Dashboard</a></li>
                         <li><a href="aplications.html"><i class="icon-chart-line"></i>Aplicaciones</a></li>
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="icon-doc-text"></i>Información<span class="caret"></span></a>
@@ -48,25 +48,16 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <h3 class="page-header text-center">Resumen del proyecto</h3>
-            <div class="row">
-                <div class="col-md-7">
-                    <p>La idea principal del proyecto es iluminar el patio del Colegio Franciscano del Cantón Salitre usando reflectores con tecnología Led alimentados mediante un generador fotovoltaico y a su vez desarrollar una sistema a bajo costo que permita el monitoreo permanente del consumo energético.
-Este sistema consiste en capturar a través de circuitos electrónicos y sensores los valores de corriente, voltaje involucrados en el proceso de generación de energía solar fotovoltaica, convirtiendo esta información en datos digitales para ser almacenados y publicados en una plataforma web para su posterior almacenamiento, visualización y análisis.
-El monitoreo a través de internet permite que el proceso de generación de energía solar fotovoltaica pueda ser observado desde cualquier computador o dispositivo móvil que cuente con acceso a internet. Este sistema de monitoreo esta soportado sobre la red GSM/GPRS nacional, por lo que solo es necesario contar con red de telefonía móvil.  Además es posible efectuar consultas sobre los parámetros de las variables mencionadas en tiempo real, sin importar el lugar donde se encuentre, también se dispone una alarma vía SMS sobre el mal funcionamiento del sistema. En la figura adjunto se muestra un diagrama de bloques simplificado del sistema.
-                    </p>    
-                </div> 
-                <div class="col-md-5">
-                    <img src="resources/images/diagrama%20de%20bloques.JPG" class="img-responsive" alt="Diagrama de bloques">    
-                </div>   
-            </div>
-        </div>
+            <h3 class="page-header text-center">Visualización del consumo energético</h3>
+			<iframe src="https://emoncms.org/dashboard/view?id=33910" width=100% height=500 frameborder=1 scrolling=auto>
+            </iframe>
+		</div>
 		<footer class="footer">
             <div class="container-fluid">
                 <p class="text-muted"><i class="icon-copyright"></i>Todos los derechos reservados a Rangel & Enriquez.</p>
             </div>
         </footer>
   	</body>
-  	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
 </html>
